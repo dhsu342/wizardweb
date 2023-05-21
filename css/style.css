@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "PirataOne";
+  src: url("../fonts/PirataOne-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+:root {
+  background-color: black;
+  /* color variables to use a variable is var(--colorname)*/
+  --Lgreen: #7dd458;
+  --Dgreen: #314f22;
+  --Lgray: #717171;
+}
+header{
+  display: flex;
+  width: 100%;
+  height: 9em;
+  justify-content: space-between;
+  align-items: center;
+ }
+section {
+  float: left;
+  width: 100%;
+  height: 20em;
+}
+nav {
+  height: 20%;
+  background-color: var(--Lgreen);
+}
+footer {
+
+  float: left;
+  background-color: var(--Dgreen);
+
+  width: 100%;
+  height: 8em;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+nav * {
+  font-family: PirataOne;
+  color: var(--Dgreen);
+  font-size: 1.3em;
+}
+footer * {
+  color: white;
+}
+article {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+aside {
+  float: left;
+  width: 15%;
+  height: 50%;
+}
+section *{
+  padding: 0.4em;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+a {
+  display: block;
+  padding-top: 0.9em;
+  padding: 0.5em;
+  overflow: hidden;
+  /*width: ;*/
+}
+/* Dinamització */
+a:link {
+  text-decoration: none;
+}
+li:hover * {
+  background-color: #314f22;
+  color: white;
+}
+li {
+  display: inline;
+  vertical-align: middle;
+}
+.active {
+  background-color: #000000;
+  color: white;
+}
+
+
+h1 {
+  color: white;
+  font-size: 5em;
+  font-family: PirataOne;
+}
+h2 {
+  color: var(--Lgreen);
+  font-size: 4em;
+  font-family: PirataOne;
+}
+h3 {
+  color: var(--Lgreen);
+  font-size: 3em;
+  font-family: PirataOne;
+}
+p {
+  color: white;
+  font-size: 1em;
+  font-family: Montserrat;
+}
+#main{
+  width: 100%;
+  height: 100%;
+}
+.icon{
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.6em;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(272deg) brightness(112%) contrast(101%);
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+ }
+.logo > img {
+  height: 100px;
+}
+.centerText {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#contacte{
+  width: 30%;
+}
+.icn-txt{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.icn-txt > p {
+  font-size: 0.8em;
+}
